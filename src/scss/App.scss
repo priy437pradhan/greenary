@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0;
+  background-color: #f5f5f5;
+}
+
+// Logging section
+.lloging {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbf7d0;
+    margin-bottom: 10px;
+    height: 70px;
+    padding: 5px 20px;
+    width: 100%;
+    border-bottom: 2px solid #22c55e;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #15803d;
+  }
+}
+
+// Logo style
+h1.logoHP {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  color: #22c55e;
+  text-shadow: 2px 1px 1px #15803d;
+  font-size: 2.5em;
+}
+
+// Button style
+.llbtn {
+  position: relative;
+  width: auto;
+  padding: 0 10px;
+  height: 100%;
+  cursor: pointer;
+  border: 2px solid #22c55e;
+  border-radius: 8px;
+  transition: 0.4s;
+  background-color: #fff;
+
+  p {
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #22c55e;
+    line-height: 19px;
+    font-weight: 700;
+  }
+}
+
+.llbtn:hover {
+  background-color: #4ade80;
+  border: 2px solid #fff;
+
+  p {
+    color: #fff;
+    text-shadow: 4px 6px 4px #a8a8b67d;
+  }
+}
+
+// Header section
+header.gapp-header {
+  height: 25px;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .singleMenu {
+    position: relative;
+    width: auto;
+    padding: 0 10px;
+    height: 100%;
+    cursor: pointer;
+    border: 2px solid #079b27;
+    margin: 0 10px 0 0;
+    border-radius: 8px;
+    transition: 0.4s;
+    background-color: #fff;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      width: max-content;
+      text-transform: uppercase;
+      color: #079b27;
+      line-height: 23px;
+      font-weight: 700;
+    }
+  }
+
+  .singleMenu:hover {
+    background-color: #0cb82ea1;
+    border: 2px solid #fff;
+
+    p {
+      color: #fff;
+      text-shadow: 4px 6px 4px #a8a8b67d;
+    }
+  }
+
+  // Second menu item style
+  .singleMenu:nth-child(2) {
+    background-color: rgb(236, 83, 83);
+    border: 2px solid #fff;
+
+    p {
+      color: #fff;
+      text-shadow: 4px 6px 4px #a8a8b67d;
+    }
+  }
+
+  .singleMenu:nth-child(2):hover {
+    border: 2px solid rgb(222, 70, 70);
+    background-color: #fff;
+
+    p {
+      color: rgb(222, 70, 70);
+    }
+  }
+}
+
+// Banner container
+.banner-container {
+  width: 100%;
+  height: 220px;
+  margin: 30px 0;
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-image: fill 0 linear-gradient(#0003, #000);
+  }
+}
+
+// Importing Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+// Login form styles
+.login_form {
+  z-index: 2;
+  border-radius: 10px;
+
+  .logingpage {
+    h2 {
+      font-size: 22px;
+      color: #0cb82ea1;
+      text-align: center;
+    }
+
+    .input_box {
+      position: relative;
+      margin-top: 30px;
+      width: 100%;
+      height: 40px;
+
+      input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 0 30px;
+        color: #333;
+        transition: all 0.2s ease;
+        border-bottom: 1.5px solid #aaaaaa;
+      }
+
+      input:focus {
+        border-color: #0cb82ea1;
+      }
+
+      .form_close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #0b0217;
+        font-size: 22px;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+
+    a {
+      color: #0cb82ea1;
+      font-size: 12px;
+    }
+
+    button {
+      padding: 6px 24px;
+      color: #fff;
+      border: 2px solid #fff;
+      background: transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: #079b27;
+      margin-top: 30px;
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 10px;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+
+    .option_field {
+      display: flex;
+      white-space: nowrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+}
+
+.form_container a:hover {
+  text-decoration: underline;
+}
+
+// Checkbox styles
+.checkbox {
+  display: flex;
+  white-space: nowrap;
+  column-gap: 8px;
+  font-size: 12px;
+
+  input {
+    accent-color: #7d2ae8;
+  }
+
+  label {
+    color: #0b0217;
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+// Login/signup text styles
+.login_signup {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+// Content styles
+.content {
+  p {
+    font-size: 1.3rem;
+  }
+
+  .requirement-list {
+    margin-top: 20px;
+  }
+
+  .requirement-list li {
+    list-style-type: none;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+}
+
+// Media queries for responsiveness
+@media only screen and (max-width: 768px) {
+  .lloging {
+    padding: 5px 8px;
+    height: 60px;
+  }
+
+  h1.logoHP {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    color: #22c55e;
+    text-shadow: 2px 1px 1px #15803d;
+    font-size: 1.8em;
+    line-height: 22px;
+  }
+
+  .lloging p {
+    display: none;
+  }
+
+  .llbtn {
+    display: none;
+  }
+}
+
+// Circle card container styles
+.CircleCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+// footer///////////////////////////////////////////////////////////////////
+// Importing Google Fonts
+
+.footer {
+  background-color: #2d3748; 
+  color: #edf2f7; 
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-top: 3px solid rgb(9, 47, 85);
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    .footer-section {
+      margin: 10px 0;
+      flex: 1;
+      min-width: 250px;
+
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      ul {
+        list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+        li {
+          margin: 5px;
+
+          a {
+            color: #63b3ed; 
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+              color: #90cdf4;
+            }
+          }
+        }
+      }
+    }
+
+    .copy {
+      font-size: 0.9rem;
+      margin-top: 10px;
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    .footer-section {
+      min-width: 100%;
+    }
+
+    .copy {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+// slider////////////////////////////////
+
+.slider-container {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  .slider {
+    display: flex;
+    height: 370px;
+    transition: transform 0.5s ease-in-out;
+
+    .slider-image {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      flex-shrink: 0;
+    }
+  }
+}
